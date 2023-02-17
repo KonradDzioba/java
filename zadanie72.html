@@ -1,30 +1,36 @@
-﻿<!DOCTYPE html>
-<html lang="pl-PL">
+<html>
 <head>
-<meta charset="utf-8">
-</head>
-<body>
-<div style="color:red;font-size:50px;">
+ <meta charset="utf-8">
 <script language="JavaScript">
-var x_prompt("podaj szerokość a="'"");
-var a_mul=x.lenght
-var y_prompt("podaj wysokość b="'"");
-var b_mul=y.lenght
-for (var i=1; y<=(b_mul-2); i++)
-{
-document.write("*");
-for (var i=1; y<=(a_mul-2); i++){
-wiersz_mul=wiersz_mul+"$nbsp$nbsp";
-}
-wiersz_kow=wiersz_kow+"*";
-document.write("*");
-}
-document.write("br");
-for ( var x=1; x<=9; x++)
-{
-document.write("*");
-}
-</script>
-</div>
+	var x=prompt("podaj wysokosc a = ","");
+	var a_dzi=x;
+	var y=prompt("podaj szerokosc b = ","");
+	var b_dzi=y;
+		for ( var i=1; i<=b_dzi; i++)
+			{
+				document.write("*");
+			}
+				document.write("<br>");
+		var wiersz_dzi="*";
+		for ( var j=1; j<=(b_dzi-2); j++)
+			{
+				wiersz_dzi=wiersz_dzi+"&nbsp&nbsp";
+			}
+				wiersz_dzi=wiersz_dzi+"*";
+		for ( var j=1; j<=(a_dzi-2); j++)
+			{
+		document.write(wiersz_dzi);
+		document.write("<br>");
+			}
+ 
+ 
+ 
+		for ( var i=1; i<=b_dzi; i++)
+			{
+		document.write("*");
+			}
+	</script>
+	</head>
+<body>
 </body>
 </html>
